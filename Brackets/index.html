@@ -1,58 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
+      <meta charset="UTF-8">
+      <meta name="author" content="Colby Nicoletti">
+      <meta name="keywords" content="Colby Nicoletti, Portfolio, Software Engineering, HTML, Software Engineer, Software, Programming">
       <!--Main Page-->
     <title>Colby Nicoletti's Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="description=" content="Colby Nicoletti's Website of his life as a Software Engineering major.">
   </head>
   <body>
     <h1 align="center">Colby Nicoletti's Portfolio</h1>  
     <h3 align="center">A general overview of the amazing things I've done in my life.</h3> 
       <br>
-    <div id="links">
-        <nav>
-          <ul>
-            <ul><a href="index.html">Home</a></ul>
-            <ul><a href="skills.html">My Skills</a></ul>
-            <ul><a href="hobbies.html">My Hobbies</a></ul>
-            <ul><a href="projects.html">Current/Finshed Projects</a></ul>
-          </ul>
-        </nav>
-    </div>
+
+      <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="skills.html">My Skills</a>
+            <a href="hobbies.html">My Hobbies</a>
+            <a href="projects.html">Current/Finshed Projects</a>
+      </div>
       <br>
+      <!--My Canvas-->
       <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
       </canvas>
       <br>
       <br>
       <br>
       <br>
+      <!--Picture of My Car-->
       <img src=vwgti.JPG alt="My VW GTI" class="rotate90"> 
       <br>
       <br>
       <br>
       <p>I chose this image because I love my car and it looks great in the picture with the soap running off of the hood.</p>
+      <!--Audio For Website-->
       <h3>Audio Controls</h3>
       <audio autoplay controls>
             <source src="oceansounds.mp3" type="audio/mp3">
       </audio>
-      <p>These are the controls of the audio file controling the ocean sounds that autoplay when the webpage is open. I wanted<br>
-          controls to be able to pause the audio because some people could fine it annoying.
+      <p>These are the controls of the audio file controling the ocean sounds that autoplay when the webpage is opened. I wanted<br>
+          controls to be able to pause the audio because some people could find it annoying.
       </p>
       <h3>Purpose of Audio</h3>
       <p>The reason I chose this audio file is because I love the beach and the sound of waves is really relaxing to me.<br>
             Hearing the ocean noising makes me concentrate and I can really focus on the work I need to do.  
       </p>
+      <!--My SVG File-->
       <h3>SVG</h3>
       <svg width="100" height="100">
         <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
       </svg>
       <p>Above is a circle made with SVG.</p>
         <script>
+            //Script for my canvas on my website
             var c = document.getElementById("myCanvas");
             var ctx = c.getContext("2d");
             ctx.font = "30px Arial";
             ctx.strokeText("VW GTI MK6", 10, 50);
         </script>
+      <style>
+ /* For my Navigation Bar*/
+          body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+      </style>
   </body>
 </html>
